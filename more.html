@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCEANIC 更多</title>
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="padding-top: 0px;">
+    <div id="black-screen">
+        <style>
+        /* 黑色遮罩設定 */
+        #black-screen {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          z-index: 9999;
+          opacity: 1;
+          transition: opacity 0.5s ease-in-out;
+        }
+      
+        /* 加上這個 class，遮罩會慢慢透明 */
+        #black-screen.fade-out {
+          opacity: 0;
+          pointer-events: none;
+        }
+      </style>
+    </div>
+    
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar">
+        <div class="container">
+          <a class="navbar-brand" aria-current="page" href="index.html">OCEANIC VON</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto me-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">關於</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="past.html">經歷</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  作品
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="banner.html">平面設計</a></li>
+                    <li><a class="dropdown-item" href="packagingdesign.html">包裝設計</a></li>
+                    <li><a class="dropdown-item" href="interiords.html">室內設計</a></li>
+                    <li><a class="dropdown-item" href="displayds.html">展示設計</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="others.html">其他作品</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="findme.html">聯絡我</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <header class="header" style="background-image: url(images/pexels-jonathanborba-5808756.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      background-blend-mode: darken;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* 垂直居中內容 */
+      align-items: center; /* 水平居中內容 */
+      text-align: center;
+      padding-top: 100px;
+    ">
+      <section class="container d-flex flex-column align-items-center">
+        <!-- 左邊：文字 -->
+        <div class="text-area mb-5 mb-lg-0">
+          <h1 class="text-white display-4 fw-bold">深掘潛能、持之以恆</h1>
+          <p class="text-white-50 fs-6 text-align: justify;">
+            先從OCEANIC VON的取名來講解，首先我希望自己能像海洋一樣寬廣不設限的學習且有著海一般的深度；而VON則是取自我的英文名，在冰島文中有著希望與寄託的意思
+          </p>
+
+          <!-- 連結區塊 -->
+          <div class="d-flex flex-column align-items-center mt-4" style="padding-top: 150px;">
+            <a href="about.html" class="btn btn-dark mb-2 w-50 w-lg-25">了解更多關於我</a>
+            <a href="past.html" class="btn btn-dark mb-2 w-50 w-lg-25">查看我的經歷</a>
+            <a href="banner.html" class="btn btn-dark mb-2 w-50 w-lg-25">平面設計</a>
+            <a href="packagingdesign.html" class="btn btn-dark mb-2 w-50 w-lg-25">包裝設計</a>
+            <a href="interiords.html" class="btn btn-dark mb-2 w-50 w-lg-25">室內設計</a>
+            <a href="displayds.html" class="btn btn-dark mb-2 w-50 w-lg-25">展示設計</a>
+            <a href="others.html" class="btn btn-dark mb-2 w-50 w-lg-25">其他作品</a>
+            <a href="findme.html" class="btn btn-dark mb-2 w-50 w-lg-25">聯絡我及YT音樂作品</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    window.addEventListener('load', function() {
+      document.getElementById('black-screen').classList.add('fade-out');
+    });
+</script>
+</body>
+</html>
